@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Does my doorfront fit?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Does my doorfront fit?</h1>
+    <p>Check if your doorfront fits on your dishwasher.</p>
+
+    <div class="mb-3">
+      <label class="form-label" for="doorfrontHeight">doorfront height (in millimeter)</label>
+      <input class="form-control" id="doorfrontHeight" type="number" value="800" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="nicheHeight">niche height (in millimeter)</label>
+      <input class="form-control" id="nicheHeight" type="number" value="884" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="minimalHeigth">minimal dishwasher height (in millimeter)</label>
+      <input class="form-control" id="minimalHeigth" type="number" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="minimalDoorHeigth">minimal door height (in millimeter)</label>
+      <input class="form-control" id="minimalDoorHeigth" type="number" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="maximalDoorHeigth">maximal door height (in millimeter)</label>
+      <input class="form-control" id="maximalDoorHeigth" type="number" />
+    </div>
+
+    <div>
+      <button class="btn btn-primary" id="calc">Berechnen</button>
+    </div>
+
+    <h2 id="maxfrontHeightSolution"></h2>
+    <h2 id="minfrontHeightSolution"></h2>
+    <h2 id="frontHeightHint"></h2>
+  </div>
+</body>
+
+</html>
